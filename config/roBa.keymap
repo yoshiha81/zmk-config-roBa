@@ -81,12 +81,12 @@
         default_layer {
             bindings = <
 &kp Q           &kp W             &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O       &kp P
-&kp A           &kp S             &kp D         &kp F             &kp G        &trans                  &kp LEFT_WIN   &kp H        &kp J  &kp K      &kp L       &kp SEMICOLON
-&kp Z           &kp X             &kp C         &kp V             &kp B        &kp TAB                 &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 4 INT_HENKAN  &lt 1 SPACE  &lt 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 ENTER                                &kp DEL
+&kp A           &kp S             &kp D         &kp F             &kp G        &trans                  &kp LEFT_WIN   &kp H        &kp J  &kp K      &kp L       &kp ENTER
+&kp Z           &kp X             &kp C         &kp V             &kp B        &kp TAB                 &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp DELETE
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 4 INT_HENKAN  &lt 1 SPACE  &lt 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 ENTER                                &lt 5 ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         ARROW+FUNCTION {
@@ -129,10 +129,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp PIPE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans          &trans                                                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
